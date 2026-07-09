@@ -3,54 +3,56 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gowseegan Sivashangaran — MSc Economics</title>
-<meta name="description" content="Gowseegan Sivashangaran — MSc Economics candidate at the University of Greenwich. Quantitative economics, financial markets, and applied econometrics." />
+<title>Gowseegan Sivashangaran — Agri-food Economics & Market Analysis</title>
+<meta name="description" content="Gowseegan Sivashangaran — MSc Economics and BSc Agricultural Technology & Management graduate. Interested in UK agri-food economics, market intelligence, agricultural policy, trade and applied economic analysis." />
 
 <!-- Open Graph -->
-<meta property="og:title" content="Gowseegan Sivashangaran — MSc Economics" />
-<meta property="og:description" content="MSc Economics candidate. Quantitative economics, financial markets, and applied econometrics." />
+<meta property="og:title" content="Gowseegan Sivashangaran — Agri-food Economics & Market Analysis" />
+<meta property="og:description" content="MSc Economics | BSc Agri Tech & Mgt | Agri-food economics, market intelligence, policy evidence and applied economic analysis." />
 <meta property="og:type" content="website" />
 
-<!-- Favicon (simple inline SVG) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231F497D'/%3E%3Ctext x='50' y='68' font-family='Georgia, serif' font-size='60' font-weight='700' text-anchor='middle' fill='%23FAF8F3'%3EG%3C/text%3E%3C/svg%3E" />
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231F497D'/%3E%3Ctext x='50' y='67' font-family='Georgia, serif' font-size='55' font-weight='700' text-anchor='middle' fill='%23FAF8F3'%3EGS%3C/text%3E%3C/svg%3E" />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
   :root {
     --paper: #FAF8F3;
     --paper-deep: #F4F1E9;
+    --paper-card: #FFFDF8;
     --ink: #1A1A1A;
     --ink-muted: #4A4A4A;
     --ink-soft: #6B6B6B;
     --rule: #D9D3C4;
     --navy: #1F497D;
     --navy-deep: #163558;
-    --accent: #A8743F;        /* warm ochre */
+    --accent: #A8743F;
     --accent-deep: #8B5E2E;
+    --green: #356D45;
     --max-w: 1200px;
   }
 
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
     margin: 0;
     background: var(--paper);
     color: var(--ink);
-    font-family: 'Manrope', system-ui, sans-serif;
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image:
-      radial-gradient(ellipse at 20% 0%, rgba(31, 73, 125, 0.04), transparent 60%),
-      radial-gradient(ellipse at 80% 100%, rgba(168, 116, 63, 0.05), transparent 60%);
+      radial-gradient(ellipse at 20% 0%, rgba(31, 73, 125, 0.055), transparent 60%),
+      radial-gradient(ellipse at 85% 15%, rgba(53, 109, 69, 0.06), transparent 45%),
+      radial-gradient(ellipse at 80% 100%, rgba(168, 116, 63, 0.06), transparent 60%);
   }
 
   ::selection { background: var(--navy); color: var(--paper); }
@@ -59,7 +61,7 @@
     color: var(--navy);
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    transition: border-color 0.2s ease, color 0.2s ease;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
   }
   a:hover { border-bottom-color: var(--navy); }
 
@@ -76,7 +78,7 @@
     z-index: 50;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background: rgba(250, 248, 243, 0.75);
+    background: rgba(250, 248, 243, 0.82);
     border-bottom: 1px solid var(--rule);
   }
   .topbar-inner {
@@ -98,9 +100,9 @@
   .brand .dot { color: var(--accent); }
   .nav-links {
     display: flex;
-    gap: clamp(1rem, 2.5vw, 2rem);
-    font-size: 0.85rem;
-    font-weight: 500;
+    gap: clamp(0.9rem, 2vw, 1.7rem);
+    font-size: 0.78rem;
+    font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
@@ -120,22 +122,29 @@
     transition: width 0.25s ease;
   }
   .nav-links a:hover::after { width: 100%; }
-  @media (max-width: 640px) {
-    .nav-links { display: none; }
-  }
+  @media (max-width: 760px) { .nav-links { display: none; } }
 
   /* ===== Hero ===== */
   .hero {
-    padding: clamp(4rem, 12vh, 9rem) 0 clamp(3rem, 8vh, 6rem);
-    position: relative;
+    padding: clamp(4rem, 11vh, 8rem) 0 clamp(3rem, 7vh, 5rem);
+    border-top: none;
+  }
+  .hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
+  }
+  @media (max-width: 880px) {
+    .hero-layout { grid-template-columns: 1fr; }
   }
   .hero-kicker {
     font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.22em;
     color: var(--accent-deep);
-    font-weight: 600;
-    margin-bottom: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     gap: 0.9rem;
@@ -149,7 +158,7 @@
   .hero h1 {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
-    font-size: clamp(2.6rem, 8.5vw, 6.2rem);
+    font-size: clamp(2.65rem, 8vw, 5.8rem);
     line-height: 0.98;
     letter-spacing: -0.025em;
     margin: 0 0 1.2rem;
@@ -165,18 +174,25 @@
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 400;
     font-style: italic;
-    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    font-size: clamp(1.08rem, 2.1vw, 1.45rem);
     color: var(--ink-muted);
-    max-width: 48ch;
-    margin: 0 0 2.4rem;
+    max-width: 53ch;
+    margin: 0 0 2rem;
     line-height: 1.5;
+  }
+  .hero-summary {
+    max-width: 66ch;
+    color: var(--ink-muted);
+    margin: 0 0 2rem;
+    font-size: 1.02rem;
   }
   .hero-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.8rem 2.2rem;
+    gap: 1rem 1.4rem;
     font-size: 0.92rem;
     color: var(--ink-muted);
+    margin-bottom: 1.7rem;
   }
   .hero-meta-item {
     display: flex;
@@ -195,9 +211,102 @@
   }
   .hero-meta-item a:hover { color: var(--navy); border-bottom-color: var(--navy); }
 
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 1px solid var(--navy);
+  }
+  .btn-primary {
+    background: var(--navy);
+    color: var(--paper);
+  }
+  .btn-primary:hover { background: var(--navy-deep); border-color: var(--navy-deep); color: var(--paper); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--navy);
+  }
+  .btn-secondary:hover { background: rgba(31, 73, 125, 0.06); }
+
+  /* ===== Portrait card ===== */
+  .portrait-card {
+    justify-self: center;
+    width: min(100%, 340px);
+    background: linear-gradient(180deg, var(--paper-card), var(--paper-deep));
+    border: 1px solid var(--rule);
+    border-radius: 22px;
+    padding: 1rem;
+    box-shadow: 0 24px 70px rgba(31, 73, 125, 0.13);
+  }
+  .portrait-frame {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(31,73,125,0.10), rgba(168,116,63,0.16));
+    border: 1px solid rgba(31,73,125,0.14);
+  }
+  .profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .profile-fallback {
+    display: none;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 4.6rem;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .portrait-caption {
+    padding: 1rem 0.3rem 0.2rem;
+  }
+  .portrait-caption strong {
+    display: block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+  .portrait-caption span {
+    display: block;
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+  }
+  .focus-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.9rem;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--rule);
+    background: rgba(255, 253, 248, 0.8);
+    border-radius: 999px;
+    padding: 0.28rem 0.62rem;
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+    font-weight: 600;
+  }
+
   /* ===== Section ===== */
   section {
-    padding: clamp(3.5rem, 8vh, 6rem) 0;
+    padding: clamp(3.4rem, 8vh, 5.6rem) 0;
     border-top: 1px solid var(--rule);
   }
   .section-grid {
@@ -216,7 +325,7 @@
     text-transform: uppercase;
     letter-spacing: 0.22em;
     color: var(--ink-soft);
-    font-weight: 600;
+    font-weight: 700;
   }
   .section-label .num {
     font-family: 'Fraunces', Georgia, serif;
@@ -229,9 +338,7 @@
     display: inline-block;
     margin-right: 0.6rem;
   }
-  @media (max-width: 800px) {
-    .section-label { position: static; }
-  }
+  @media (max-width: 800px) { .section-label { position: static; } }
   .section-title {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
@@ -241,29 +348,24 @@
     margin: 0 0 1.8rem;
     color: var(--ink);
   }
-  .section-title em {
-    font-style: italic;
-    color: var(--navy);
-  }
+  .section-title em { font-style: italic; color: var(--navy); }
 
-  /* ===== Profile prose ===== */
-  .prose p {
-    font-size: 1.08rem;
-    line-height: 1.7;
+  .prose p, .prose {
+    font-size: 1.05rem;
+    line-height: 1.72;
     color: var(--ink-muted);
-    margin: 0 0 1.2rem;
-    max-width: 62ch;
+    max-width: 68ch;
   }
-  .prose strong { color: var(--ink); font-weight: 600; }
+  .prose p { margin: 0 0 1.2rem; }
+  .prose strong { color: var(--ink); font-weight: 700; }
 
   /* ===== Cards / entries ===== */
   .entry {
-    padding: 1.8rem 0;
+    padding: 1.75rem 0;
     border-bottom: 1px solid var(--rule);
   }
   .entry:last-child { border-bottom: none; padding-bottom: 0; }
   .entry:first-child { padding-top: 0; }
-
   .entry-head {
     display: flex;
     flex-wrap: wrap;
@@ -275,7 +377,7 @@
   .entry-title {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.24rem;
     color: var(--ink);
     margin: 0;
     letter-spacing: -0.005em;
@@ -290,8 +392,8 @@
   .entry-org {
     font-size: 0.97rem;
     color: var(--navy);
-    margin-bottom: 0.3rem;
-    font-weight: 500;
+    margin-bottom: 0.28rem;
+    font-weight: 700;
   }
   .entry-context {
     font-size: 0.9rem;
@@ -299,12 +401,12 @@
     color: var(--ink-soft);
     margin-bottom: 0.9rem;
   }
-  .entry ul {
+  .entry ul, .clean-list {
     margin: 0.6rem 0 0;
     padding: 0;
     list-style: none;
   }
-  .entry ul li {
+  .entry ul li, .clean-list li {
     position: relative;
     padding-left: 1.4rem;
     margin-bottom: 0.55rem;
@@ -312,7 +414,7 @@
     font-size: 0.97rem;
     line-height: 1.6;
   }
-  .entry ul li::before {
+  .entry ul li::before, .clean-list li::before {
     content: '';
     position: absolute;
     left: 0;
@@ -320,6 +422,32 @@
     width: 0.6rem;
     height: 1px;
     background: var(--accent);
+  }
+
+  /* ===== Focus cards ===== */
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+  .focus-card {
+    background: rgba(255, 253, 248, 0.65);
+    border: 1px solid var(--rule);
+    border-radius: 16px;
+    padding: 1.15rem;
+  }
+  .focus-card h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.05rem;
+    margin: 0 0 0.45rem;
+    color: var(--navy);
+    font-style: italic;
+    font-weight: 500;
+  }
+  .focus-card p {
+    margin: 0;
+    color: var(--ink-muted);
+    font-size: 0.94rem;
   }
 
   /* ===== Skills ===== */
@@ -357,7 +485,7 @@
     font-weight: 700;
   }
 
-  /* ===== Quals ===== */
+  /* ===== Qualifications / chips ===== */
   .qual-group { margin-bottom: 1.8rem; }
   .qual-group:last-child { margin-bottom: 0; }
   .qual-org {
@@ -387,19 +515,6 @@
     height: 1px;
     background: var(--accent);
   }
-  .qual-list li .pill {
-    display: inline-block;
-    margin-left: 0.4rem;
-    padding: 0.05rem 0.5rem;
-    font-size: 0.72rem;
-    background: rgba(168, 116, 63, 0.12);
-    color: var(--accent-deep);
-    border-radius: 3px;
-    font-style: italic;
-    letter-spacing: 0.02em;
-  }
-
-  /* ===== Engagement chips ===== */
   .chips {
     display: flex;
     flex-wrap: wrap;
@@ -421,15 +536,14 @@
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
   @media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; } }
-
   .contact-card {
     background: var(--paper-deep);
     border: 1px solid var(--rule);
     padding: 1.8rem;
-    border-radius: 4px;
+    border-radius: 16px;
   }
   .contact-card h3 {
     font-family: 'Fraunces', Georgia, serif;
@@ -451,15 +565,14 @@
   .contact-link:last-child { border-bottom: none; }
   .contact-link svg { width: 16px; height: 16px; stroke: var(--navy); flex-shrink: 0; }
   .contact-link:hover { color: var(--navy); border-bottom-color: var(--navy); }
-
   .ref-note {
     font-size: 0.92rem;
     color: var(--ink-soft);
     font-style: italic;
     line-height: 1.6;
+    margin: 0;
   }
 
-  /* ===== Footer ===== */
   footer {
     padding: 3rem 0 2.5rem;
     border-top: 1px solid var(--rule);
@@ -475,7 +588,6 @@
     margin-bottom: 0.4rem;
   }
 
-  /* ===== Reveal animation ===== */
   .reveal {
     opacity: 0;
     transform: translateY(18px);
@@ -493,12 +605,12 @@
 </head>
 <body>
 
-<!-- ============ TOP BAR ============ -->
 <header class="topbar">
   <div class="topbar-inner">
     <a href="#top" class="brand">Gowseegan<span class="dot">.</span></a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="#about">About</a>
+      <a href="#focus">Focus</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#research">Research</a>
@@ -510,115 +622,147 @@
 
 <main id="top">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" style="border-top: none;">
-    <div class="container">
-      <div class="hero-kicker">MSc Economics — University of Greenwich</div>
-      <h1>Gowseegan<br/><em>Sivashangaran</em></h1>
-      <p class="hero-sub">
-        Applied economist in training. Quantitative analysis at the
-        intersection of financial markets, agribusiness, and policy.
-      </p>
-      <div class="hero-meta">
-        <div class="hero-meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          London, United Kingdom
+  <section class="hero">
+    <div class="container hero-layout">
+      <div>
+        <div class="hero-kicker">MSc Economics | BSc Agricultural Technology &amp; Management</div>
+        <h1>Gowseegan<br/><em>Sivashangaran</em></h1>
+        <p class="hero-sub">
+          Agri-food economics, market intelligence and applied economic analysis.
+        </p>
+        <p class="hero-summary">
+          Graduate with experience in market research, data handling and evidence-based reporting, combining practical exposure to agricultural and aquaculture operations with quantitative analysis using Excel, Stata, R and Python.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            United Kingdom
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:msgowseegan96@gmail.com">msgowseegan96@gmail.com</a>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+447775869890">+44 777 586 9890</a>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://www.linkedin.com/in/msgowseegan96" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
-        <div class="hero-meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <a href="mailto:msgowseegan96@gmail.com">msgowseegan96@gmail.com</a>
-        </div>
-        <div class="hero-meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+447775869890">+44 777 586 9890</a>
-        </div>
-        <div class="hero-meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          <a href="https://www.linkedin.com/in/msgowseegan96" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#contact">Contact me</a>
+          <a class="btn btn-secondary" href="#research">View research</a>
         </div>
       </div>
+
+      <aside class="portrait-card" aria-label="Profile photo card">
+        <div class="portrait-frame">
+          <!-- Upload your photo to GitHub as: assets/profile.jpg -->
+          <img class="profile-photo" src="assets/profile.jpg" alt="Profile photo of Gowseegan Sivashangaran" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <div class="profile-fallback" aria-hidden="true">GS</div>
+        </div>
+        <div class="portrait-caption">
+          <strong>Open to analyst and economist pathways</strong>
+          <span>Agri-food sector research · Market analysis · Policy evidence</span>
+          <div class="focus-tags">
+            <span class="tag">Agri-food economics</span>
+            <span class="tag">Market intelligence</span>
+            <span class="tag">Applied econometrics</span>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
   <section id="about">
     <div class="container section-grid">
       <div class="section-label"><span class="num">01</span>About</div>
       <div>
-        <h2 class="section-title">A rare combination of <em>agricultural science</em> and <em>quantitative economics</em>.</h2>
+        <h2 class="section-title">Economics training with practical understanding of <em>agriculture, aquaculture and business performance</em>.</h2>
         <div class="prose reveal">
           <p>
-            I'm an MSc Economics candidate at the University of Greenwich,
-            specialising in <strong>Business and Financial Economics</strong>.
-            Before that, I read Agricultural Technology and Management at the
-            University of Peradeniya, with a specialisation in Applied
-            Economics and Business Management.
+            I am an MSc Economics student at the University of Greenwich with a BSc in Agricultural Technology and Management from the University of Peradeniya, specialising in Applied Economics and Business Management.
           </p>
           <p>
-            My applied work spans <strong>panel-data econometrics</strong>,
-            <strong>market efficiency testing</strong>, and
-            <strong>volatility modelling</strong> — using R, Stata, Python,
-            and SQL. As a Trainee Research Analyst at Senfin Securities, I
-            covered Colombo Stock Exchange equities and Sri Lankan government
-            bonds, building multi-decade time-series datasets and producing
-            client-facing research.
+            My professional interest is in UK agri-food economics, agricultural policy, market intelligence, trade, sector performance and farm-level economic challenges. I am particularly interested in work that converts agricultural, financial and business datasets into clear evidence for decision-making.
           </p>
           <p>
-            I'm currently looking for roles where statistical rigour meets
-            commercial decisions: <strong>agricultural economics</strong>,
-            <strong>commodity markets</strong>, and
-            <strong>business analytics</strong>.
+            My background combines market research experience from a SEC-licensed stockbroker with field-level exposure to saltern and sea cucumber farming operations, giving me a practical understanding of production, cost pressures, profitability and resource allocation.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ EDUCATION ============ -->
+  <section id="focus">
+    <div class="container section-grid">
+      <div class="section-label"><span class="num">02</span>Focus</div>
+      <div>
+        <h2 class="section-title">Professional focus</h2>
+        <div class="focus-grid reveal">
+          <div class="focus-card">
+            <h3>Agri-food economics</h3>
+            <p>Agricultural markets, farm business performance, sector analysis and production-cost interpretation.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Market intelligence</h3>
+            <p>Sector research, commercial analysis, briefing summaries and evidence-based reporting.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Policy and trade evidence</h3>
+            <p>Interest in agricultural policy, trade, food systems, consumer trends and macroeconomic conditions affecting the sector.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Quantitative analysis</h3>
+            <p>Data cleaning, statistical testing, trend analysis and structured analytical writing using Excel, Stata, R and Python.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="education">
     <div class="container section-grid">
-      <div class="section-label"><span class="num">02</span>Education</div>
+      <div class="section-label"><span class="num">03</span>Education</div>
       <div>
         <h2 class="section-title">Education</h2>
 
         <div class="entry reveal">
           <div class="entry-head">
-            <h3 class="entry-title">MSc Economics</h3>
-            <span class="entry-date">Expected July 2026</span>
+            <h3 class="entry-title">MSc in Economics</h3>
+            <span class="entry-date">2025/26</span>
           </div>
           <div class="entry-org">University of Greenwich, United Kingdom</div>
-          <div class="entry-context">Endorsement in Business and Financial Economics</div>
+          <div class="entry-context">Business &amp; Financial Economics</div>
           <ul>
-            <li>Modules: Economics of Finance and Investment, International Financial Markets, Applied Econometrics, Macroeconomics 1 &amp; 2, Microeconomics 1 &amp; 2.</li>
-            <li>Applied work in Stata: panel-data econometrics (Cobb–Douglas production function with FE/RE/GMM estimators), weak-form market efficiency testing, ARCH/GARCH volatility modelling.</li>
-            <li>All taught modules completed in April 2026; dissertation in progress.</li>
+            <li>Relevant areas: microeconomics, macroeconomics, quantitative methods and applied econometrics.</li>
+            <li>Dissertation focus: climate finance and macroeconomic vulnerability in developing economies.</li>
           </ul>
         </div>
 
         <div class="entry reveal">
           <div class="entry-head">
-            <h3 class="entry-title">BSc (Hons) Agricultural Technology and Management</h3>
+            <h3 class="entry-title">BSc (Hons) Agricultural Technology &amp; Management</h3>
             <span class="entry-date">2019 – 2024</span>
           </div>
           <div class="entry-org">University of Peradeniya, Sri Lanka</div>
-          <div class="entry-context">Specialisation in Applied Economics and Business Management</div>
+          <div class="entry-context">Applied Economics &amp; Business Management</div>
           <ul>
-            <li>Final-year GPA <strong>3.54 / 4.00</strong> — equivalent to UK Upper Second Class Honours (2:1).</li>
-            <li>Grade A in Statistical Methods; strong results in Quantitative Techniques, Research Methods, and Design &amp; Analysis of Experiments.</li>
-            <li>Coursework: Micro/Macroeconomics, Financial Management, International Business &amp; Trade, Project Analysis, Financial &amp; Management Accounting.</li>
-            <li>Programme delivered fully in English.</li>
+            <li>Relevant areas: resource and environmental economics, animal and crop production, genetics and breeding, land and water resource engineering, and post-harvest technology.</li>
+            <li>Developed an applied understanding of agricultural production systems alongside economics, business and quantitative analysis.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ EXPERIENCE ============ -->
   <section id="experience">
     <div class="container section-grid">
-      <div class="section-label"><span class="num">03</span>Experience</div>
+      <div class="section-label"><span class="num">04</span>Experience</div>
       <div>
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">Relevant experience</h2>
 
         <div class="entry reveal">
           <div class="entry-head">
@@ -628,90 +772,113 @@
           <div class="entry-org">Senfin Securities Limited</div>
           <div class="entry-context">SEC-licensed stockbroker, Sri Lanka</div>
           <ul>
-            <li>Covered Colombo Stock Exchange equities — primary focus on the plantation sector — and Central Bank of Sri Lanka short- and long-term government bonds.</li>
-            <li>Conducted long-horizon time-series analysis of CSE daily index movements (1990–2024) to study market trends, volatility regimes, and cyclicality.</li>
-            <li>Performed fundamental analysis of listed plantation companies using annual financial statements: ratio analysis, trend analysis, and peer comparison.</li>
-            <li>Built and maintained structured equity and fixed-income datasets in Excel and Refinitiv Workspace, ensuring data integrity across multi-decade historical series.</li>
-            <li>Produced analytical research outputs translating quantitative findings into clear insights for client-facing and internal use.</li>
+            <li>Built and maintained sector and market datasets covering 284 listed companies in Sri Lanka.</li>
+            <li>Analysed company and sector performance, production trends, cost structures and market developments.</li>
+            <li>Prepared daily, weekly and monthly reports, quarterly earnings summaries and short analytical updates.</li>
+            <li>Converted financial, business and market information into clear written summaries for decision-making.</li>
+            <li>Strengthened skills in data handling, performance analysis and evidence-based reporting.</li>
           </ul>
         </div>
 
         <div class="entry reveal">
           <div class="entry-head">
-            <h3 class="entry-title">Junior Economic and Business Analyst <span style="font-weight: 400; color: var(--ink-soft); font-style: italic; font-size: 0.95rem;">(part-time)</span></h3>
-            <span class="entry-date">Jan 2023 – Jun 2025</span>
+            <h3 class="entry-title">Research and Development Associate</h3>
+            <span class="entry-date">Dec 2022 – Mar 2024</span>
           </div>
-          <div class="entry-org">ARUL Holdings Pvt Ltd</div>
-          <div class="entry-context">Saltern and sea cucumber farming, Northern Sri Lanka</div>
+          <div class="entry-org">Arul Holdings Pvt Ltd</div>
+          <div class="entry-context">Saltern and sea cucumber farming, Sri Lanka</div>
           <ul>
-            <li>Conducted applied microeconomic and cost-efficiency analysis across saltern and sea cucumber aquaculture operations, supporting production and pricing decisions.</li>
-            <li>Built and maintained operational datasets in Excel and Power BI, tracking production volumes, input costs, and yield performance across sites.</li>
-            <li>Prepared quantitative summaries, cost projections, and management dashboards to inform operational planning.</li>
-            <li>Applied statistical and data-driven methods to identify efficiency gaps in a small-scale agribusiness setting (15 hours/week).</li>
+            <li>Collected and analysed production, yield, operational cost and profitability data.</li>
+            <li>Supported production and profitability analysis for operational planning and resource allocation.</li>
+            <li>Developed practical understanding of aquaculture production systems, cost pressures and operational constraints.</li>
+            <li>Linked field-level production information with business performance, resource use and management decisions.</li>
+          </ul>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Sales Assistant <span style="font-weight: 400; color: var(--ink-soft); font-style: italic; font-size: 0.95rem;">(part-time)</span></h3>
+            <span class="entry-date">Jan 2026 – Present</span>
+          </div>
+          <div class="entry-org">RONTEC Watford Limited</div>
+          <div class="entry-context">Shop n' Drive Woodway, Coventry, United Kingdom</div>
+          <ul>
+            <li>Deliver customer service in a fast-paced UK retail environment.</li>
+            <li>Follow safety, compliance, stock handling and operational procedures.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ RESEARCH ============ -->
   <section id="research">
     <div class="container section-grid">
-      <div class="section-label"><span class="num">04</span>Research</div>
+      <div class="section-label"><span class="num">05</span>Research</div>
       <div>
-        <h2 class="section-title">Research</h2>
+        <h2 class="section-title">Selected analytical projects</h2>
+
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3 class="entry-title">Climate Finance and Macroeconomic Vulnerability in Developing Economies</h3>
+            <span class="entry-date">2026</span>
+          </div>
+          <div class="entry-org">MSc Thesis, University of Greenwich</div>
+          <div class="entry-context">Supervisor: Prof. Mehmet Ugur</div>
+          <ul>
+            <li>Examines the relationship between climate finance, debt exposure and macroeconomic vulnerability in developing economies.</li>
+            <li>Uses economic, financial and policy-related datasets to assess vulnerability, resilience and risk channels.</li>
+            <li>Develops empirical research skills relevant to climate risk, development finance and economic policy.</li>
+          </ul>
+        </div>
 
         <div class="entry reveal">
           <div class="entry-head">
             <h3 class="entry-title">Stock Market Efficiency and Volatility: Sri Lanka vs Asian Frontier Markets</h3>
-            <span class="entry-date">2023 – 2024</span>
+            <span class="entry-date">2024</span>
           </div>
           <div class="entry-org">BSc Thesis, University of Peradeniya</div>
-          <div class="entry-context">Supervisor: Prof. D.V.P. Prasada · Grade: A (Distinction)</div>
+          <div class="entry-context">Supervisor: Prof. D.V.P. Prasada · Grade: A</div>
           <ul>
-            <li>Tested the weak-form efficient market hypothesis across four frontier markets — Sri Lanka, Pakistan, Bangladesh, Vietnam — using daily index data from 2000 to 2023.</li>
-            <li>Applied ADF unit-root tests for random-walk behaviour and ARCH/GARCH models to estimate and compare volatility dynamics across markets.</li>
-            <li>Found evidence of weak-form efficiency in all four markets, with Sri Lanka exhibiting the lowest volatility and risk profile in the comparison set.</li>
-            <li>Delivered the full empirical workflow in Stata with data sourced from Refinitiv Workspace; final thesis produced in LaTeX.</li>
+            <li>Analysed daily index datasets of Asian frontier markets and tested weak-form market efficiency.</li>
+            <li>Modelled volatility using Stata and presented technical findings through a structured research report.</li>
+            <li>Developed skills in data handling, statistical testing, interpretation and evidence-based writing.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
   <section id="skills">
     <div class="container section-grid">
-      <div class="section-label"><span class="num">05</span>Toolkit</div>
+      <div class="section-label"><span class="num">06</span>Skills</div>
       <div>
-        <h2 class="section-title">Toolkit</h2>
+        <h2 class="section-title">Technical skills</h2>
         <div class="skills-grid reveal">
           <div class="skill-block">
-            <h3>Statistical programming</h3>
+            <h3>Data and analysis</h3>
             <ul>
-              <li>R</li>
+              <li>Excel</li>
               <li>Stata</li>
+              <li>R</li>
               <li>Python</li>
-              <li>EViews</li>
-              <li>SPSS</li>
             </ul>
           </div>
           <div class="skill-block">
-            <h3>Data &amp; BI tools</h3>
+            <h3>Research methods</h3>
             <ul>
-              <li>Microsoft Excel (advanced)</li>
-              <li>SQL</li>
-              <li>Power BI</li>
-              <li>Power Query</li>
-              <li>Tableau</li>
+              <li>Data cleaning</li>
+              <li>Descriptive analysis</li>
+              <li>Statistical testing</li>
+              <li>Report writing</li>
             </ul>
           </div>
           <div class="skill-block">
-            <h3>Research &amp; reporting</h3>
+            <h3>Communication</h3>
             <ul>
-              <li>LaTeX (academic &amp; Beamer)</li>
-              <li>Technical writing</li>
-              <li>Quantitative results presentation</li>
+              <li>Analytical reports</li>
+              <li>Briefing summaries</li>
+              <li>Presentations</li>
+              <li>Evidence-based explanations</li>
             </ul>
           </div>
         </div>
@@ -719,52 +886,38 @@
     </div>
   </section>
 
-  <!-- ============ QUALIFICATIONS ============ -->
   <section id="qualifications">
     <div class="container section-grid">
-      <div class="section-label"><span class="num">06</span>Qualifications</div>
+      <div class="section-label"><span class="num">07</span>Qualifications</div>
       <div>
-        <h2 class="section-title">Professional qualifications &amp; training</h2>
+        <h2 class="section-title">Professional qualifications, awards and engagement</h2>
 
         <div class="reveal">
           <div class="qual-group">
-            <h4 class="qual-org">Corporate Finance Institute</h4>
+            <h4 class="qual-org">Professional qualifications and tests</h4>
             <ul class="qual-list">
-              <li>Business Intelligence and Data Analyst (BIDA®) Certification <span class="pill">in progress</span></li>
-              <li>Financial Modeling and Valuation Analyst (FMVA®) Certification <span class="pill">in progress</span></li>
-              <li>Capital Markets and Securities Analyst (CMSA®) Certification</li>
-              <li>Environmental, Social, and Governance (ESG) Specialization</li>
+              <li>GRE General Test: 304/340; Quantitative Reasoning 162/170; Verbal Reasoning 142/170; Analytical Writing 3.5/6.</li>
+              <li>Corporate Finance Institute: FMVA®, CMSA® and ESG Specialization.</li>
+              <li>ACCA UK: Diploma in Accounting and Business, RQF Level 4.</li>
+              <li>CMA Sri Lanka: Certificate Level.</li>
+              <li>Virtual programmes: Data Science, Lloyds Banking Group; Markets Quantitative Analysis, Citi.</li>
             </ul>
           </div>
 
           <div class="qual-group">
-            <h4 class="qual-org">Bloomberg for Education</h4>
+            <h4 class="qual-org">Awards and recognition</h4>
             <ul class="qual-list">
-              <li>Bloomberg Finance Fundamentals (BFF)</li>
-              <li>Bloomberg Market Concepts (BMC)</li>
-              <li>Bloomberg Spreadsheet Analysis</li>
+              <li>International Scholarship Award, University of Greenwich, 2025.</li>
+              <li>Subject Prize and Merit Prize for excellence in the Certificate Level, CMA Sri Lanka, 2024.</li>
+              <li>Mahapola Merit Scholarship for national-level high performance in university entrance examinations, 2019.</li>
             </ul>
           </div>
 
           <div class="qual-group">
-            <h4 class="qual-org">ACCA UK</h4>
-            <ul class="qual-list">
-              <li>Diploma in Accounting and Business (RQF Level 4)</li>
-            </ul>
-          </div>
-
-          <div class="qual-group">
-            <h4 class="qual-org">CMA Sri Lanka</h4>
-            <ul class="qual-list">
-              <li>Certificate Level <span class="pill">Merit &amp; Subject Prize</span></li>
-            </ul>
-          </div>
-
-          <div class="qual-group" style="margin-top: 2rem;">
-            <h4 class="qual-org" style="font-style: italic; font-weight: 500;">Academic &amp; professional engagement</h4>
+            <h4 class="qual-org">Academic and professional engagement</h4>
             <div class="chips" style="margin-top: 0.7rem;">
-              <span class="chip">Bloomberg Global Trading Challenge — University of Greenwich</span>
-              <span class="chip">CSE Capital Market Quiz — University of Peradeniya</span>
+              <span class="chip">Bloomberg Global Trading Challenge — University of Greenwich, 2025</span>
+              <span class="chip">Capital Market Quiz Competition — Colombo Stock Exchange, 2023</span>
             </div>
           </div>
         </div>
@@ -772,16 +925,13 @@
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
   <section id="contact">
     <div class="container section-grid">
-      <div class="section-label"><span class="num">07</span>Get in touch</div>
+      <div class="section-label"><span class="num">08</span>Contact</div>
       <div>
-        <h2 class="section-title">Let's <em>talk</em>.</h2>
+        <h2 class="section-title">Let’s <em>connect</em>.</h2>
         <p class="prose" style="margin-bottom: 2rem;">
-          Currently in London and open to opportunities in agricultural
-          economics, commodity markets, financial analysis, and business
-          analytics. The fastest way to reach me is email.
+          I am interested in analyst and economist pathways in agri-food sector research, market intelligence, policy evidence and applied economic analysis. The fastest way to reach me is email.
         </p>
 
         <div class="contact-grid reveal">
@@ -803,10 +953,7 @@
           <div class="contact-card">
             <h3>References</h3>
             <p class="ref-note">
-              Available on request. Past supervisors and managers in academia
-              (University of Peradeniya) and industry (Senfin Securities,
-              ARUL Holdings, CPM Europe) can speak to my quantitative,
-              analytical, and operational work.
+              References are available on request from academic supervisors and professional managers, including Prof. Mehmet Ugur, Dasun Perera CFA and Prof. D.V.P. Prasada.
             </p>
           </div>
         </div>
@@ -816,19 +963,16 @@
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer>
   <div class="container">
     <div class="signature">— Gowseegan Sivashangaran —</div>
-    <div>© <span id="year"></span> · Built with care in London.</div>
+    <div>© <span id="year"></span> · Built for professional networking in UK agri-food economics.</div>
   </div>
 </footer>
 
 <script>
-  // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Scroll-reveal
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
